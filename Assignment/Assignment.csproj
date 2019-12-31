@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F5830CE-1809-41BA-B7A7-FE1BB8C3A88F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Assignment</RootNamespace>
+    <AssemblyName>Assignment</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Reference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Reference.Designer.cs">
+      <DependentUpon>Add_Reference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Tags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Tags.Designer.cs">
+      <DependentUpon>Add_Tags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Password.Designer.cs">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseCon.cs" />
+    <Compile Include="Edit_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Profile.Designer.cs">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_References.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_References.Designer.cs">
+      <DependentUpon>Edit_References.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Tags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Tags.Designer.cs">
+      <DependentUpon>Edit_Tags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export.Designer.cs">
+      <DependentUpon>Export.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginUserdata.cs" />
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference.cs" />
+    <Compile Include="ReferencesValidation.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tags.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserValidation.cs" />
+    <Compile Include="viewAllReferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewAllReferences.Designer.cs">
+      <DependentUpon>viewAllReferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllTags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllTags.Designer.cs">
+      <DependentUpon>ViewAllTags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_myReferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_myReferences.Designer.cs">
+      <DependentUpon>View_myReferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMyTags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMyTags.Designer.cs">
+      <DependentUpon>ViewMyTags.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Reference.resx">
+      <DependentUpon>Add_Reference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Tags.resx">
+      <DependentUpon>Add_Tags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Password.resx">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Profile.resx">
+      <DependentUpon>Edit_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_References.resx">
+      <DependentUpon>Edit_References.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Tags.resx">
+      <DependentUpon>Edit_Tags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export.resx">
+      <DependentUpon>Export.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="viewAllReferences.resx">
+      <DependentUpon>viewAllReferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllTags.resx">
+      <DependentUpon>ViewAllTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_myReferences.resx">
+      <DependentUpon>View_myReferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMyTags.resx">
+      <DependentUpon>ViewMyTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
